@@ -1,3 +1,11 @@
+This repository is a modified version of
+[TaatiTeam/MotionAGFormer](https://github.com/TaatiTeam/MotionAGFormer).
+The original project is licensed under the Apache License 2.0.
+
+## Modifications
+Added support for installation.
+
+
 # [WACV 2024] MotionAGFormer: Enhancing 3D Human Pose Estimation With a Transformer-GCNFormer Network
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> [![arXiv](https://img.shields.io/badge/arXiv-2210.06551-b31b1b.svg)](https://arxiv.org/abs/2310.16288) <a href="https://youtu.be/iyLhxPjwBuQ?si=yoG-wlz7N1fq-PmY"><img alt="Paper Explanation" src="https://img.shields.io/badge/-Paper Explanation in 9 Minutes-ea3323?logo=youtube"></a>
 
