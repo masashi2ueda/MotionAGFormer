@@ -1,13 +1,13 @@
 from collections import OrderedDict
 
 import torch
-from torch import nn
 from timm.models.layers import DropPath
+from torch import nn
 
-from model.modules.attention import Attention
-from model.modules.graph import GCN
-from model.modules.mlp import MLP
-from model.modules.tcn import MultiScaleTCN
+from .modules.attention import Attention
+from .modules.graph import GCN
+from .modules.mlp import MLP
+from .modules.tcn import MultiScaleTCN
 
 
 class AGFormerBlock(nn.Module):
@@ -285,8 +285,9 @@ class MotionAGFormer(nn.Module):
 
 
 def _test():
-    from torchprofile import profile_macs
     import warnings
+
+    from torchprofile import profile_macs
     warnings.filterwarnings('ignore')
     b, c, t, j = 1, 3, 27, 17
     random_x = torch.randn((b, t, j, c)).to('cuda')
